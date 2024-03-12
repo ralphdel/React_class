@@ -1,0 +1,8 @@
+A navigation bar that contains log in/log out 
+Once the user log in it hanges to log out, but when the use isn't logged in it has log out . 
+This is whre state comes to effect 
+
+State helps track changes in our U.I . 
+
+
+Add/subtract from input
