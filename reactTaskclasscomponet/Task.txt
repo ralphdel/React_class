@@ -1,0 +1,10 @@
+TASK 1 
+Create an input field with a change listener in the App 
+component which outputs the length of the entered text below it 
+
+TASK 2 
+Crete a new component which receives the text length as input 
+
+TASK 3 
+Inside the new component either output "text too short" or "text too long" 
+
