@@ -14,19 +14,24 @@ class App extends Component {
     showpersons: false,
   };
 
-  /*togglePerson=()=>{
-  this.setState({
-    
-  })
-  }
-*/
+  togglepersonHandler = () => {
+    const availablepersons = this.state.persons;
+
+    this.setState({
+      persons: availablepersons,
+    });
+  };
   render() {
     return (
       <>
-        {this.state.persons.map((Eachperson) => {
-          return <Person name={Eachperson.name} age={Eachperson.age}></Person>;
-        })}
-        <button  >Showperson</button>
+      <button onClick={() => this.togglepersonHandler}>Show persons</button>
+        {{togglepersonHandler}? (
+          this.state.persons.map((Eachperson) => {
+            <Person name={Eachperson.name} age={Eachperson.age}></Person>;
+          })
+        ) : (
+          <p>Kindly click the button to see persons </p>
+        )}
       </>
     );
   }
