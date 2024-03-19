@@ -1,0 +1,16 @@
+My Task is working with Form 
+
+Form is critical when buildin a web application 
+Form is basically used when you nedd to get details from user 
+
+It's better to wrap your input field inside a Div 
+input is an inline tag 
+
+Value captures whatever the 
+
+A form always have a trigger 
+
+When thinking about saving your data, this is where useState comes in 
+
+Input is an object...............
+

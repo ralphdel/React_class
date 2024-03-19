@@ -14,6 +14,7 @@ class App extends Component {
     showpersons: false,
   };
 
+<<<<<<< HEAD
   togglepersonHandler = () => {
     const availablepersons = this.state.persons;
 
@@ -32,6 +33,33 @@ class App extends Component {
         ) : (
           <p>Kindly click the button to see persons </p>
         )}
+=======
+  togglepersohandler = () => {
+    const availablepersons = this.state.showpersons;
+    this.setState({
+      showpersons: !availablepersons,
+    });
+  };
+
+  render() {
+    return (
+      <>
+        <button onClick={() => this.togglepersohandler()}>Showperson</button>
+
+        {
+          (this.state.showpersons ? (
+            <div>
+              {this.state.persons.map((Eachperson) => {
+                return (
+                  <Person name={Eachperson.name} age={Eachperson.age}></Person>
+                );
+              })}
+            </div>
+          ) : (
+            <h4>click the buttton to view the available persons </h4>
+          ))
+        }
+>>>>>>> 714d2d451366ecc563a663fc427687039147f33d
       </>
     );
   }
