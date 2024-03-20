@@ -3,16 +3,21 @@ import { useState } from "react";
 const Form = () => {
   const [username, setUsername] = useState("");
   const [useremail, setUseremail] = useState("");
+ const[entries, setEntries]= useState({})
 
   const Handleusername = (e) => setUsername(e.target.value);
 
   const Handleuseremail = (e) => setUseremail(e.target.value);
 
   const Handleform =(e) => {
+  
     e.preventDefault();
-    console.log(`Username:${username}  Useremail:${useremail}`);
-    setUsername('');
-    setUseremail('')
+   setEntries({
+    ...entries,
+    name: username,
+    email: useremail
+  })
+  console.log(entries);
 
   }
 
@@ -43,12 +48,12 @@ const Form = () => {
             onChange={Handleuseremail}
           />
         </div>
-        <button> Submit </button>
+        <button type="submit"> Submit </button>
       </form>
 
       <div>
-        <p> Name: {username}</p>
-        <p> Email: {useremail}</p>
+        <p> Name: {entries.name}</p>
+        <p> Email: {entries.email}</p>
       </div>
     </>
   );

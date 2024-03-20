@@ -11,6 +11,20 @@ const Form = () => {
     });
   };
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   const Handleformsubmit = (e) => {
     e.preventDefault();
 
@@ -20,9 +34,12 @@ const Form = () => {
         Username: inputs.name,
         Useremail: inputs.email,
         Userpassword: inputs.password,
+        id: '2024'+entries.length+'wrtygf'
       },
     ]);
     setInputs({ name: "", email: "", password: "" });
+
+
     console.log(entries);
   };
 
@@ -43,7 +60,7 @@ const Form = () => {
         <div>
           <label htmlFor=""> Email </label>
           <input
-            type="text"
+            type="email"
             name="email"
             placeholder="enter your email address"
             value={inputs.email}
@@ -53,7 +70,7 @@ const Form = () => {
         <div>
           <label htmlFor="">Password </label>
           <input
-            type="text"
+            type="password"
             name="password"
             placeholder="type password here"
             value={inputs.password}
@@ -61,7 +78,7 @@ const Form = () => {
           />
         </div>
 
-        <button> SUBMIT</button>
+        <button   > SUBMIT</button>
       </form>
       <div>
         <p>Name:{inputs.name}</p>
