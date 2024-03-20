@@ -4,39 +4,46 @@ const Form = () => {
   const [username, setUsername] = useState("");
   const [useremail, setUseremail] = useState("");
 
- // const Handleusername
+  const Handleusername = (e) => setUsername(e.target.value);
 
+  const Handleuseremail = (e) => setUseremail(e.target.value);
 
-  //const Handleuseremail = () => (e) => setUseremail(e.target.value);
+  const Handleform =(e) => {
+    e.preventDefault();
+    console.log(`Username:${username}  Useremail:${useremail}`);
+    setUsername('');
+    setUseremail('')
+
+  }
 
   return (
     <>
       <h3> Form is ready </h3>
-      <form action="">
+      <form
+        onSubmit={Handleform}
+      >
         <div>
-          <label > Name </label>
+          <label> Name </label>
 
           <input
             name="name"
             type="text"
+            value={username}
             placeholder="type your name "
-            onChange={(e)=>setUsername(e.target.value)}
+            onChange={Handleusername}
           />
         </div>
         <div>
-          <label > Email </label>
+          <label> Email </label>
           <input
+            name="email"
+            value={useremail}
             type="text"
             placeholder="enter your email"
-            onChange={(e)=> setUseremail(e.target.value)}
+            onChange={Handleuseremail}
           />
         </div>
-        <button  onSubmit={(e)=>{
-            e.preventDefault();
-
-           return console.log(`Name:${username}, Email:${useremail}`);
-            }
-           }> Submit </button>
+        <button> Submit </button>
       </form>
 
       <div>

@@ -14,3 +14,7 @@ When thinking about saving your data, this is where useState comes in
 
 Input is an object...............
 
+This form gets various inputs from users separately 
+
+
+
