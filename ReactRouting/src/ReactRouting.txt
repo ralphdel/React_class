@@ -1,0 +1,22 @@
+React is a client based application, Application runs faster and smoother with react
+
+React generally doesn't let you route 
+
+REACT-ROUTING is a third party library(it doesn't come with react sxo we need to install it).
+
+ROUTING is navigation(direction)
+We have ROUTES AND 
+ROUTE (this gives the exact direction, the path to take, and gives the exact component to render )
+
+routes need to be inside of App.js because that is the point of entry for all the components we want to render 
+
+
+
+read more about nesting(ROUNTING)
+
+
+DYNAMIC ROUTING.. 
+Use cases of dynamic routing
+
+
+READ MORE ABOUT PROTECTED ROUTE.. 
