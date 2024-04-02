@@ -1,0 +1,4 @@
+useContext(), helps us pass states globally 
+
+Task
+useContext is used a data is needed by all components 
