@@ -12,14 +12,38 @@ const Form = () => {
   const Handleform =(e) => {
   
     e.preventDefault();
-   setEntries({
-    ...entries,
-    name: username,
-    email: useremail
+  setEntries((prevEntries)=>
+  {
+    return {...prevEntries, 
+    name:username,
+    email:useremail}
   })
-  console.log(entries);
-
+    setUsername('')
+    setUseremail('')
   }
+  console.log(entries);
+  
+/*setEntries((prevEntries)=>
+     [...prevEntries, {
+        name:username,
+        email:useremail
+     }
+    ])
+
+    console.log(entries);
+    setUsername('')
+    setUseremail('')
+  */
+ /* setEntries((prevEntries)=>({
+    ...prevEntries,
+    name:username,
+    email:useremail
+  }))
+setUsername('');
+setUseremail('')
+console.log(entries);
+*/
+
 
   return (
     <>
