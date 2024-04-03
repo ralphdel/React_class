@@ -1,0 +1,9 @@
+Use context , the word context means how you use something.. 
+Your perspective of a thing 
+Use context helps avoid prop drilling i.e pasing props around 
+
+
+Provider context and destination are the important thing 
+
+
+

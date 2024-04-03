@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setCount(count + 1);
-    }, 1000);
+    }, 8000);
   }, [calculation]); //useeffect takes a function a a depency..
   //everything in useEffect only get triggered when components gets rendered
 
